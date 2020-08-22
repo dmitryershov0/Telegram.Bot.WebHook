@@ -6,12 +6,11 @@
     "BotToken": "<BotToken>"    
   }
 ```
+    
 ### Ngrok
 Ngrok дает вам возможность получить доступ к вашему локальному компьютеру из временного поддомена, предоставленного ngrok. Этот домен может позже отправить в API Telegram как URL для webhook.
-[Ngrok - download](https://ngrok.com/download)
-```
+[Ngrok - download](https://ngrok.com/download) and start ngrok on port 8443.
 
-and start ngrok on port 8443.
 ```
 ngrok http 8443 -host-header="localhost:8443"
 ```
@@ -29,8 +28,8 @@ https://api.telegram.org/bot{token}/getWebhookInfo
 "result":{"url":"https://yoursubdomain.ngrok.io/api/update",
 "has_custom_certificate":false,
 "pending_update_count":0,
-"max_connections":40}
+"max_connections":40
 }
-
+```
 ###  Run bot local
 Теперь вы можете запустить бота в локальном экземпляре.
